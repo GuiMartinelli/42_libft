@@ -6,7 +6,7 @@
 #    By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/20 22:14:47 by guferrei          #+#    #+#              #
-#    Updated: 2021/06/07 21:07:24 by guferrei         ###   ########.fr        #
+#    Updated: 2021/07/14 08:48:34 by guferrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ FT = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 	ft_split.c ft_strchr.c ft_strdup.c ft_strjoin.c ft_strlcat.c \
 	ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c \
 	ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c \
+	ft_putuns_fd.c ft_putnbrX.c ft_nbrlen.c
 
 OBJ = $(FT:.c=.o)
 
