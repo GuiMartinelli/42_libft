@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/28 19:27:07 by guferrei          #+#    #+#             */
-/*   Updated: 2021/07/22 11:57:04 by guferrei         ###   ########.fr       */
+/*   Created: 2021/05/26 20:21:33 by guferrei          #+#    #+#             */
+/*   Updated: 2021/07/22 11:51:11 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include<unistd.h>
 
-size_t	ft_strlen(const char *ptr)
+void	ft_putnstr(char *s, int n)
 {
-	int	c;
-
-	if (!ptr)
-		return (0);
-	c = 0;
-	while (*ptr != '\0')
+	if (!s)
+		ft_putnstr("(null)", n);
+	else
 	{
-		c++;
-		ptr++;
+		while (*s && n > 0)
+		{
+			write(1, &*s, 1);
+			s++;
+			n--;
+		}
 	}
-	return (c);
 }

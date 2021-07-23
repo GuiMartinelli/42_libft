@@ -1,31 +1,26 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-int	nb_size(long long n, int base)
+int	nb_size(unsigned int n, int base)
 {
-	unsigned long long	i;
-	int					size;
+	int	size;
 
 	size = 1;
-	if (n < 0)
-		i = n * -1;
-	else
-		i = n;
-	while (i >= (unsigned long long)base)
+	while (n >= (unsigned int)base)
 	{
-		i /= base;
+		n /= base;
 		size++;
 	}
 	size++;
 	return (size);
 }
 
-void	positive(unsigned long long nbr, int base, char *result, char *str)
+void	nb_print(unsigned int nbr, int base, char *result, char *str)
 {
 	int	aux;
 
 	aux = 0;
-	while (nbr >= (unsigned long long)base)
+	while (nbr >= (unsigned int)base)
 	{
 		*(result + aux) = *(str + (nbr % base));
 		nbr /= base;
@@ -39,46 +34,19 @@ void	positive(unsigned long long nbr, int base, char *result, char *str)
 	}
 }
 
-void	negative(unsigned long long nbr, int base, char *result, char *str)
+void	nb_convert(char *str, unsigned int n, int size, int base)
 {
-	int	aux;
+	char	*result;
 
-	aux = 0;
-	while (aux < 8)
+	result = malloc(size * sizeof(char));
+	if (result)
 	{
-		*(result + aux) = *(str + (base - ((nbr % base) + 1)));
-		nbr /= base;
-		aux++;
-	}
-	while (aux >= 0)
-	{
-		write (1, &*(result + aux), 1);
-		aux--;
+		nb_print(n, base, result, str);
+		free (result);
 	}
 }
 
-void	nb_convert(char *str, long long n, int size, int base)
-{
-	unsigned long long	nbr;
-	char				*result;
-
-	if (n >= 0)
-	{
-		nbr = n;
-		result = malloc(size * sizeof(char));
-		if (result)
-			positive(nbr, base, result, str);
-	}
-	else
-	{
-		nbr = (n * -1) - 1;
-		result = malloc(9 * sizeof(char));
-		if (result)
-			negative(nbr, base, result, str);
-	}
-}
-
-void	ft_putnbrX(long long n, char x)
+void	ft_putnbrX(unsigned int n, char x)
 {
 	int	base;
 	int	size;
@@ -89,5 +57,4 @@ void	ft_putnbrX(long long n, char x)
 		nb_convert("0123456789abcdef", n, size, base);
 	else if (x == 'X')
 		nb_convert("0123456789ABCDEF", n, size, base);
-	write (1, " | ", 3);
 }

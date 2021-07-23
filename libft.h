@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 21:39:46 by guferrei          #+#    #+#             */
-/*   Updated: 2021/07/14 08:47:47 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/07/21 13:53:43 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,10 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putuns_fd(unsigned int n, int fd);
-void	ft_putnbrX(long long n, char x);
+void	ft_putnbrX(unsigned int n, char x);
+void	ft_put0x(unsigned long n, char x);
 int		ft_nbrlen(long long nbr, int base);
+void	ft_putnstr(char *s, int n);
 
 typedef struct s_list
 {

@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 20:21:33 by guferrei          #+#    #+#             */
-/*   Updated: 2021/05/28 19:24:07 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/07/21 07:50:01 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,14 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	while (*s)
+	if (!s)
+		write (1, "(null)", 6);
+	else
 	{
-		write(fd, &*s, 1);
-		s++;
+		while (*s)
+		{
+			write(fd, &*s, 1);
+			s++;
+		}
 	}
 }
