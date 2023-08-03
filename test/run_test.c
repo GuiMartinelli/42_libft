@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 15:17:58 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/03 17:21:15 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/03 17:44:30 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int	main(void) {
 	ft_isalnum_tests();
 	ft_isascii_tests();
 	ft_isprint_tests();
+	ft_atoi_tests();
 	return (0);
 }
