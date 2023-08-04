@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 19:41:33 by guferrei          #+#    #+#             */
-/*   Updated: 2021/05/28 18:48:59 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/04 13:52:49 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_bzero(void *ptr, size_t n)
 	int	c;
 
 	c = 0;
-	while (c < (int)n)
+	while (ptr && c < (int)n)
 	{
 		*(unsigned char *)ptr = '\0';
 		ptr++;
