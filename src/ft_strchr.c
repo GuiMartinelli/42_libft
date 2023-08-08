@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 22:25:49 by guferrei          #+#    #+#             */
-/*   Updated: 2021/06/02 23:29:21 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/08 10:33:37 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != '\0')
+	while (s && *s != '\0')
 	{
 		if (*s == (unsigned char)c)
 			return ((char *)s);
