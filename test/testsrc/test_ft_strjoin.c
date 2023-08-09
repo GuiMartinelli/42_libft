@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 10:52:05 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/08 11:19:28 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 19:50:20 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,14 @@ void	ft_strjoin_test_routine(char *expected, char *s1, char *s2) {
 	free(actual);
 }
 
+void	ft_strjoin_empty_test_routine() {
+	char*	actual;
+
+	actual = ft_strjoin("", "");
+	TEST_ASSERT_EMPTY(actual);
+	free(actual);
+}
+
 void	ft_strjoin_valid_join_test(void) {
 	ft_strjoin_test_routine("AB", "A", "B");
 	ft_strjoin_test_routine("ABCD1234", "ABCD", "1234");
@@ -33,6 +41,7 @@ void	ft_strjoin_valid_join_test(void) {
 void	ft_strjoin_empty_test(void) {
 	ft_strjoin_test_routine("ABC", "ABC", "\0");
 	ft_strjoin_test_routine("123", "\0", "123");
+	ft_strjoin_empty_test_routine();
 }
 
 void	ft_strjoin_tests(void) {
