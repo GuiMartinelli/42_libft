@@ -6,13 +6,11 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 11:58:08 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/04 13:53:43 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 19:54:05 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
-#include <stdlib.h>
-#include <strings.h>
 
 char*	actual_array;
 char*	expected_array;

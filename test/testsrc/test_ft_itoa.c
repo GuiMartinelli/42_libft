@@ -6,13 +6,11 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 09:46:17 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/08 11:03:39 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 19:54:39 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
-#include <string.h>
-#include <limits.h>
 
 void	ft_itoa_test_routine(char * expected, int test_value) {
 	char*	actual;

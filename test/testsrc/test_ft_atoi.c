@@ -6,12 +6,11 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 17:23:42 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/03 17:46:43 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 19:53:45 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
-#include <limits.h>
 
 void	ft_atoi_positive_numbers_tests(void) {
 	TEST_ASSERT_EQUAL_INT(0, ft_atoi("0"));

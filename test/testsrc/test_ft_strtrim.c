@@ -6,12 +6,11 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/09 19:16:34 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/09 19:46:49 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 19:53:24 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
-#include <string.h>
 
 void	ft_strtrim_test_routine(char * expected, char *test_string, char *charset) {
 	char*	actual;

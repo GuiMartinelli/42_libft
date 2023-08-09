@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 15:18:30 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/09 19:20:17 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 19:54:35 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 #include "../../unity/src/unity.h"
 #include "../../src/libft.h"
+
+#include <string.h>
+#include <limits.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <string.h>
 
 void	ft_toupper_tests(void);
 void	ft_tolower_tests(void);

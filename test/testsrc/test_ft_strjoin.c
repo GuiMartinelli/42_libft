@@ -6,13 +6,11 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 10:52:05 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/09 19:50:20 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 19:54:50 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
-#include <string.h>
-#include <stdio.h>
 
 void	ft_strjoin_test_routine(char *expected, char *s1, char *s2) {
 	char	*actual;
