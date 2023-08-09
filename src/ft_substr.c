@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 19:30:57 by guferrei          #+#    #+#             */
-/*   Updated: 2021/06/04 17:31:36 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 20:20:05 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	c = 0;
 	size = ft_strlen((char *)s);
-	if (len == 0 || (size_t)start > len || start > size)
+	if (len == 0 || start > size)
 	{
 		ptr = ft_calloc(1, sizeof(char));
 		return (ptr);
