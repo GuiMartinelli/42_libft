@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 18:17:52 by guferrei          #+#    #+#             */
-/*   Updated: 2021/06/04 17:39:52 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 19:43:54 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t		c;
 	int			s;
 
+	if (!s1 || !set)
+		return (NULL);
 	s = 0;
 	c = ft_strlen((char *)s1);
 	ptr = (s1 + c) - 1;
