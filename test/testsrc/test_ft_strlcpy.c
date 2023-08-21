@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/09 20:50:58 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/21 20:32:08 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/21 20:50:06 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,11 @@ void	ft_strlcpy_copy_test(void) {
 }
 
 void	ft_strlcpy_null_parameter_test(void) {
-	char	*dest_string = malloc(11);
+	char	*dest_string;
 
 	TEST_ASSERT_EQUAL_INT(0, ft_strlcpy(dest_string, NULL, 11));
 	TEST_ASSERT_EQUAL_INT(0, ft_strlcpy(NULL, "Wonderwall", 11));
 	TEST_ASSERT_EQUAL_INT(0, ft_strlcpy(NULL, NULL, 11));
-
-	free(dest_string);
 }
 
 void	ft_strlcpy_empty_parameter_test(void) {
