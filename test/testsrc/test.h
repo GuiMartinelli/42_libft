@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 15:18:30 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/09 20:01:21 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/09 21:02:06 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ void	ft_strjoin_tests(void);
 void	ft_strlen_tests(void);
 void	ft_strtrim_tests(void);
 void	ft_substr_tests(void);
+void	ft_strlcpy_tests(void);
 
 #endif
