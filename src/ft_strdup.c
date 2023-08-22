@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 19:00:36 by guferrei          #+#    #+#             */
-/*   Updated: 2021/06/03 19:46:47 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/21 21:02:11 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(const char *s)
 	c = 0;
 	n = ft_strlen((char *)s);
 	ptr = (char *)malloc((n + 1) * sizeof(char));
-	if (ptr == NULL)
+	if (!ptr || !s)
 		return (NULL);
 	while (c < n)
 	{
