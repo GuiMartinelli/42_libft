@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 15:17:58 by guferrei          #+#    #+#             */
-/*   Updated: 2023/08/21 21:03:21 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/29 20:28:04 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ int	main(void) {
 	ft_strlcpy_tests();
 	ft_strlcat_tests();
 	ft_strdup_tests();
+	ft_strncmp_tests();
 	return (0);
 }
