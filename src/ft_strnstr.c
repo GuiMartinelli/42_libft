@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 16:03:29 by guferrei          #+#    #+#             */
-/*   Updated: 2021/06/04 18:39:59 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/29 20:51:47 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	a;
 
 	c = 0;
+	if (!big || !little)
+		return (NULL);
 	if (!*little)
 		return ((char *)big);
 	while (*big && c < len)
