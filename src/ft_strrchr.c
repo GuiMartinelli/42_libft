@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 22:48:53 by guferrei          #+#    #+#             */
-/*   Updated: 2021/06/02 23:32:09 by guferrei         ###   ########.fr       */
+/*   Updated: 2023/08/29 21:03:52 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strrchr(const char *s, int c)
 	int	cont;
 
 	cont = 0;
+	if (!s)
+		return (NULL);
 	while (*(char *)s != '\0')
 	{
 		s++;
